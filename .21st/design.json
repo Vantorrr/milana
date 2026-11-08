@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "project": {
+    "name": "milana",
+    "productType": null,
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  },
+  "sources": {
+    "tokens": [],
+    "components": [],
+    "assets": [
+      "assets"
+    ],
+    "instructions": []
+  },
+  "design": {
+    "colorMode": "dark",
+    "colors": {},
+    "typography": {},
+    "spacing": {},
+    "radius": {},
+    "shadows": {},
+    "motion": {},
+    "density": "unknown"
+  },
+  "components": {
+    "installed": [],
+    "preferredPrimitives": [],
+    "patterns": []
+  },
+  "constraints": {
+    "must": [],
+    "avoid": []
+  },
+  "decisions": [
+    "Keep the existing purple and pink birthday identity and real poster. On mobile, fit a compact heading, poster and explicit downward anchor in the first screen; show the beginning of the invitation card. Preserve native scrolling and reduced-motion support."
+  ],
+  "evidence": [],
+  "generatedAt": "2026-11-08T17:18:53.841Z"
+}
