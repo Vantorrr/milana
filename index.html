@@ -10,7 +10,7 @@
   <title>Милана ✦ 6 лет — волшебное приглашение</title>
   <link rel="preload" as="image" href="assets/milana-poster.webp" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap');
     :root{
       --night:#0c0719; --wine:#180d30; --violet:#9b67ff; --rose:#ff70c9; --light:#ffe7fa;
       --white:#fff9ff; --gold:#ffe8aa; --muted:#cebfdd; --glass:rgba(32,14,57,.74);
@@ -111,6 +111,56 @@
       body:not(.past-cover) .sound{min-width:44px;width:44px;height:44px;padding:12px;bottom:auto;top:70px;right:12px}
       body:not(.past-cover) #soundText{display:none}
     }
+
+    /* A playful birthday ticket, in the original pink and violet palette. */
+    :root{--display:Nunito,Manrope,Arial,sans-serif}
+    .section-title,.invite-hi,.footer strong{font-weight:900;letter-spacing:-.045em}
+    .primary-invitation .section-title{line-height:1.04}
+    .primary-invitation .section-title .gradient-text{background:none;color:#ffc5e8}
+    .primary-invitation .section-heading>.eyebrow{color:#ffe8aa;letter-spacing:.16em}
+    .primary-invitation .section-heading>.section-subtitle{color:#eddaef}
+    .birthday-sticker{position:absolute;z-index:2;right:-17px;top:-17px;display:flex;flex-direction:column;align-items:center;justify-content:center;width:92px;height:92px;transform:rotate(10deg);border-radius:50%;background:#ffe8aa;color:#542350;border:4px solid #fff6d9;box-shadow:0 6px 0 #b46b9866;font-size:10px;font-weight:900}
+    .birthday-sticker b{font-family:var(--display);font-size:45px;line-height:1}
+    .poster-star{position:absolute;z-index:2;left:-23px;bottom:18px;color:#ffe8aa;font-size:55px;line-height:1;text-shadow:0 3px 0 #b56c9d;transform:rotate(-12deg)}
+    .poster-shell{box-shadow:0 18px 50px #07031266}
+    .invitation-card{background:#fff0f7;color:#452154;border:2px solid #fff9ff;border-radius:30px;box-shadow:0 12px 0 #a569cc33,0 24px 65px #09031366;overflow:visible}
+    .invitation-card:after{content:'✦';top:22px;right:24px;font-size:30px;color:#b977c9}
+    .invite-intro{color:#89518d;letter-spacing:.15em;font-size:10px}
+    .invite-hi{color:#452154;line-height:1.04;margin:18px 0}
+    .invitation-card .gradient-text{background:none;color:#ac3682}
+    .invitation-card p{color:#694769;font-size:15px;line-height:1.75}
+    .party-picks{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px}
+    .party-picks span{padding:8px 10px;border-radius:12px;background:#eddffc;color:#60317c;font-weight:800;font-size:11px}
+    .party-picks span:nth-child(2){background:#ffdce9;color:#8b3566}
+    .party-picks span:nth-child(3){background:#ffedbc;color:#725226}
+    .event-meta{border-block:2px dashed #dcb5d2;margin:24px -2px 20px;padding:21px 0}
+    .meta-label{color:#82587e}.meta-value{color:#51275d;font-weight:900}
+    .invitation-card .place-note{color:#795976!important}
+    .invitation-card .btn-primary{background:#743da8;color:white;box-shadow:0 4px 0 #512577}
+    .invitation-card .btn-secondary{background:transparent;color:#6a3d7c;border-color:#bd93c6;box-shadow:none}
+    .friends-section .section-title{line-height:1.08}
+    .friends-caption{color:#ffe8aa}
+    .invitation-next{background:#ffdfef;color:#542350;border:1px solid #fff1f8;border-radius:20px;padding:11px 16px;box-shadow:0 5px 0 #a866c94d}
+    .invitation-next small{color:#795578}
+    .next-arrow{background:#7543a2;color:white;border:0;width:36px;height:36px}
+    .ticker{background:#e7b4ed;color:#542350;border:0;transform:rotate(-1deg);padding:14px 0;font-size:10px}
+    @media(max-width:890px){
+      .birthday-sticker{width:67px;height:67px;right:-12px;top:-12px;font-size:8px;border-width:3px}
+      .birthday-sticker b{font-size:33px}
+      .poster-star{font-size:40px;left:-16px}
+      .primary-invitation .poster-shell{max-width:calc(100% - 28px)}
+      .invitation-next{min-height:64px}
+    }
+    @media(max-width:540px){
+      .primary-invitation .section-title{font-size:clamp(33px,9.2vw,44px)}
+      .primary-invitation .poster-shell img{max-height:clamp(150px,calc(100svh - 440px),420px)}
+      .invitation-card{padding:28px 23px}
+      .invite-hi{font-size:41px}
+      .event-meta{grid-template-columns:1.3fr .7fr}
+      .meta-value{font-size:clamp(21px,6vw,27px);white-space:nowrap}
+      .invitation-next strong{font-size:13px}
+      .invitation-next small{font-size:10px}
+    }
   </style>
 </head>
 <body>
@@ -123,24 +173,24 @@
   <main>
     <section class="section primary-invitation" id="top" aria-label="Приглашение на день рождения Миланы">
       <div class="section-inner">
-        <div class="section-heading reveal"><div class="eyebrow">★ MILANA BIRTHDAY • 6 ЛЕТ</div><h1 class="section-title"><span class="gradient-text">Милане 6!</span><br>Ты приглашена</h1><p class="section-subtitle">30 ноября в 15:00 ✦ Танцы, волшебство<br>и любимые герои K-pop Demon Hunters!</p></div>
+        <div class="section-heading reveal"><div class="eyebrow">✦ Самый волшебный день ✦</div><h1 class="section-title"><span class="gradient-text">Милане 6!</span><br>Ты приглашена</h1><p class="section-subtitle">30 ноября в 15:00 ✦ Танцы, волшебство<br>и любимые герои K-pop Demon Hunters!</p></div>
         <div class="invite-layout">
-          <div class="invite-cover reveal"><div class="poster-shell"><img fetchpriority="high" src="assets/milana-poster.webp" alt="Праздничный постер: Милана с героинями K-pop Demon Hunters в сказочном зимнем лесу" width="940" height="987"></div><div class="tiny-note">Милана и её волшебные друзья ✦</div><a class="invitation-next" href="#invitation-details"><span><strong>Листай вниз</strong><small>Там твоё приглашение</small></span><span class="next-arrow" aria-hidden="true">↓</span></a></div>
+          <div class="invite-cover reveal"><div class="poster-shell"><span class="birthday-sticker" aria-hidden="true"><b>6</b>лет счастья!</span><span class="poster-star" aria-hidden="true">✦</span><img fetchpriority="high" src="assets/milana-poster.webp" alt="Праздничный постер: Милана с героинями K-pop Demon Hunters в сказочном зимнем лесу" width="940" height="987"></div><div class="tiny-note">Милана и её волшебные друзья ✦</div><a class="invitation-next" href="#invitation-details"><span><strong>Твой билет на праздник</strong><small>Листай вниз или нажми сюда</small></span><span class="next-arrow" aria-hidden="true">↓</span></a></div>
           <div class="invitation-card reveal delay" id="invitation-details" tabindex="-1">
-            <div class="invite-intro">Специально для тебя ✧</div>
-            <h3 class="invite-hi">Приходи<br><span class="gradient-text">на праздник!</span></h3>
+            <div class="invite-intro">Твой билет на праздник ♡</div>
+            <h2 class="invite-hi">Будем сиять<br><span class="gradient-text">вместе!</span></h2>
             <p>Мне исполняется <strong>6 лет</strong>! Давай вместе устроим настоящий K-pop праздник: будем танцевать, веселиться, фотографироваться и загадывать желания! 💜</p>
-            <div class="event-meta"><div><div class="meta-label">Когда</div><div class="meta-value">30 ноября</div></div><div><div class="meta-label">Во сколько</div><div class="meta-value">15:00</div></div></div>
+            <div class="party-picks" aria-label="На празднике"><span>🎤 Поём</span><span>🪩 Танцуем</span><span>✨ Загадываем желания</span></div><div class="event-meta"><div><div class="meta-label">Когда</div><div class="meta-value">30 ноября</div></div><div><div class="meta-label">Во сколько</div><div class="meta-value">15:00</div></div></div>
             <p class="place-note">📍 Место встречи родители сообщат отдельно.</p>
             <div class="card-buttons"><button class="btn btn-primary" id="addCalendar">▦ Добавить в календарь</button><button class="btn btn-secondary" id="shareInvite">↗ Поделиться</button></div>
           </div>
         </div>
       </div>
     </section>
-    <div class="ticker" aria-hidden="true"><div class="ticker-content"><span>✦ MILANA 6 ✦ HAPPY BIRTHDAY ✦ K-POP ✦ MAGIC ✦ DANCE ✦</span><span>✦ MILANA 6 ✦ HAPPY BIRTHDAY ✦ K-POP ✦ MAGIC ✦ DANCE ✦</span></div></div>
+    <div class="ticker" aria-hidden="true"><div class="ticker-content"><span>✦ МИЛАНЕ 6 ✦ ДРУЖБА ✦ K-POP ✦ ВОЛШЕБСТВО ✦ ТАНЦЫ ✦</span><span>✦ МИЛАНЕ 6 ✦ ДРУЖБА ✦ K-POP ✦ ВОЛШЕБСТВО ✦ ТАНЦЫ ✦</span></div></div>
     <section class="section friends-section" id="friends">
       <div class="section-inner">
-        <div class="section-heading reveal"><div class="eyebrow">02 / THE BIRTHDAY GIRLS</div><h2 class="section-title">Вместе мы — <span class="gradient-text">суперзвёзды!</span></h2><p class="section-subtitle">Наш самый яркий девичий K-pop состав. Лучший праздник — тот, где рядом подружки! 💗</p></div>
+        <div class="section-heading reveal"><div class="eyebrow">✦ Команда лучших подружек ✦</div><h2 class="section-title">Вместе мы — <span class="gradient-text">суперзвёзды!</span></h2><p class="section-subtitle">Наш самый яркий девичий K-pop состав. Лучший праздник — тот, где рядом подружки! 💗</p></div>
         <button class="friends-photo-wrap reveal delay" id="zoomFriends" aria-label="Увеличить общее фото шести девочек" style="display:block;width:100%;border:0;text-align:left;color:inherit"><img loading="lazy" src="assets/milana-friends.webp" alt="Шесть подружек в сияющих костюмах K-pop Demon Hunters, Милана в центре с тортом в честь шести лет" width="1536" height="784"><span class="friends-zoom">⛶ УВЕЛИЧИТЬ</span></button>
         <div class="friends-caption reveal">Волшебство начинается, когда мы вместе ✨</div>
       </div>

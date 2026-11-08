@@ -37,7 +37,8 @@
     "avoid": []
   },
   "decisions": [
-    "Keep the existing purple and pink birthday identity and real poster. On mobile, fit a compact heading, poster and explicit downward anchor in the first screen; show the beginning of the invitation card. Preserve native scrolling and reduced-motion support."
+    "Keep the existing purple and pink birthday identity and real poster. On mobile, fit a compact heading, poster and explicit downward anchor in the first screen; show the beginning of the invitation card. Preserve native scrolling and reduced-motion support.",
+    "Child-friendly birthday styling: rounded Nunito headings, original purple/pink poster, yellow age sticker, blush invitation ticket and pastel activity labels. Keep chorus audio and first-screen mobile scroll affordance."
   ],
   "evidence": [],
   "generatedAt": "2026-11-08T17:18:53.841Z"
